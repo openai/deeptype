@@ -1,0 +1,201 @@
+# sentid: fr-ud-train_00001
+# sentence-text: Les commotions cérébrales sont devenu si courantes dans ce sport qu'on les considére presque comme la routine.
+1	Les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	commotions	commotion	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_
+3	cérébrales	cérébral	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	_
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	devenu	devenir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6	si	si	ADV	_	_	7	advmod	_	_
+7	courantes	courant	ADJ	_	Gender=Fem|Number=Plur	5	xcomp	_	_
+8	dans	dans	ADP	_	_	10	case	_	_
+9	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
+10	sport	sport	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	_
+11	qu'	que	SCONJ	_	_	14	mark	_	_
+12	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_
+13	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	14	dobj	_	_
+14	considére	considérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+15	presque	presque	ADV	_	_	14	advmod	_	_
+16	comme	comme	ADP	_	_	18	case	_	_
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	routine	routine	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	_
+19	.	.	PUNCT	_	_	5	punct	_	_
+
+# sentid: fr-ud-train_00002
+# sentence-text: L'œuvre est située dans la galerie des batailles, dans le château de Versailles.
+1	L'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	œuvre	œuvre	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	située	situer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	dans	dans	ADP	_	_	7	case	_	_
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	galerie	galerie	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	_
+8-9	des	_	_	_	_	_	_	_	_
+8	de	de	ADP	_	_	10	case	_	_
+9	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	batailles	bataille	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	_
+11	,	,	PUNCT	_	_	4	punct	_	_
+12	dans	dans	ADP	_	_	14	case	_	_
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	château	château	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	_
+15	de	de	ADP	_	_	16	case	_	_
+16	Versailles	Versailles	PROPN	_	_	14	nmod	_	_
+17	.	.	PUNCT	_	_	4	punct	_	_
+
+# sentid: fr-ud-train_00003
+# sentence-text: Le comportement de la Turquie vis-à-vis du problème palestinien a fait qu'elle n'est plus en odeur de sainteté auprès de la communauté juive en générale, et américaine en particulier.
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	comportement	comportement	NOUN	_	Gender=Masc|Number=Sing	12	nsubj	_	_
+3	de	de	ADP	_	_	5	case	_	_
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Turquie	Turquie	PROPN	_	_	2	nmod	_	_
+6	vis-à-vis	vis-à-vis	NOUN	_	Gender=Masc|Number=Sing	9	case	_	_
+7-8	du	_	_	_	_	_	_	_	_
+7	de	de	ADP	_	_	6	mwe	_	_
+8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	problème	problème	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+10	palestinien	palestinien	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	_
+11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+12	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+13	qu'	que	SCONJ	_	_	16	mark	_	_
+14	elle	elle	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+15	n'	ne	PART	_	_	16	neg	_	_
+16	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
+17	plus	plus	ADV	_	_	16	advmod	_	_
+18	en	en	ADP	_	_	19	case	_	_
+19	odeur	odeur	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_
+20	de	de	ADP	_	_	21	case	_	_
+21	sainteté	sainteté	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	_
+22	auprès	auprès	ADP	_	_	25	case	_	_
+23	de	de	ADP	_	_	22	mwe	_	_
+24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	communauté	communauté	NOUN	_	Gender=Fem|Number=Sing	16	nmod	_	_
+26	juive	juif	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_
+27	en	en	ADP	_	_	28	case	_	_
+28	générale	général	ADJ	_	Gender=Fem|Number=Sing	25	amod	_	_
+29	,	,	PUNCT	_	_	25	punct	_	_
+30	et	et	CONJ	_	_	25	cc	_	_
+31	américaine	américaine	NOUN	_	Gender=Fem|Number=Sing	25	conj	_	_
+32	en	en	ADP	_	_	31	advmod	_	_
+33	particulier	particulier	ADJ	_	Gender=Masc|Number=Sing	32	mwe	_	_
+34	.	.	PUNCT	_	_	12	punct	_	_
+
+# sentid: fr-ud-train_00004
+# sentence-text: Toutefois, les filles adorent les desserts.
+1	Toutefois	toutefois	ADV	_	_	5	advmod	_	_
+2	,	,	PUNCT	_	_	5	punct	_	_
+3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	filles	fille	NOUN	_	Gender=Fem|Number=Plur	5	nsubj	_	_
+5	adorent	adorer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	desserts	dessert	NOUN	_	Gender=Masc|Number=Plur	5	dobj	_	_
+8	.	.	PUNCT	_	_	5	punct	_	_
+
+# sentid: fr-ud-train_00005
+# sentence-text: Ismene entre et annonce que c'est Farnace qui a mis le feu à la flotte romaine.
+1	Ismene	Ismene	PROPN	_	_	2	nsubj	_	_
+2	entre	entrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	et	et	CONJ	_	_	2	cc	_	_
+4	annonce	annoncer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+5	que	que	SCONJ	_	_	8	mark	_	_
+6	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	_
+7	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	Farnace	Farnace	PROPN	_	_	4	ccomp	_	_
+9	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	_
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl:relcl	_	_
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	feu	feu	NOUN	_	Gender=Masc|Number=Sing	11	dobj	_	_
+14	à	à	ADP	_	_	16	case	_	_
+15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	flotte	flotte	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_
+17	romaine	romain	ADJ	_	Gender=Fem|Number=Sing	16	amod	_	_
+18	.	.	PUNCT	_	_	2	punct	_	_
+
+# sentid: fr-ud-train_00006
+# sentence-text: je reviendrais avec plaisir !
+1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	reviendrais	revenir	VERB	_	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	avec	avec	ADP	_	_	4	case	_	_
+4	plaisir	plaisir	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	_
+5	!	!	PUNCT	_	_	2	punct	_	_
+
+# sentid: fr-ud-train_00007
+# sentence-text: Les forfaits comprennent le transport en car Grand Tourisme des différents lieux de départs proposés autour de Lyon, le forfait de ski sur le domaine cité, un en-cas petit-déjeuner servi à votre arrivée en station et le service d'un accompagnateur salarié assurant la logistique des départs et des retours.
+1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	forfaits	forfait	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	comprennent	comprendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	transport	transport	NOUN	_	Gender=Masc|Number=Sing	3	dobj	_	_
+6	en	en	ADP	_	_	7	case	_	_
+7	car	car	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	_
+8	Grand	Grand	PROPN	_	_	7	name	_	_
+9	Tourisme	Tourisme	PROPN	_	_	7	name	_	_
+10-11	des	_	_	_	_	_	_	_	_
+10	de	de	ADP	_	_	13	case	_	_
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+12	différents	différent	ADJ	_	Gender=Masc|Number=Plur	13	amod	_	_
+13	lieux	lieu	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	_
+14	de	de	ADP	_	_	15	case	_	_
+15	départs	départ	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	_
+16	proposés	proposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	13	acl	_	_
+17	autour	autour	ADP	_	_	19	case	_	_
+18	de	de	ADP	_	_	17	mwe	_	_
+19	Lyon	Lyon	PROPN	_	_	16	nmod	_	_
+20	,	,	PUNCT	_	_	5	punct	_	_
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	forfait	forfait	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_
+23	de	de	ADP	_	_	24	case	_	_
+24	ski	ski	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_
+25	sur	sur	ADP	_	_	27	case	_	_
+26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	domaine	domaine	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	_
+28	cité	citer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	27	acl	_	_
+29	,	,	PUNCT	_	_	5	punct	_	_
+30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	en-cas	en-cas	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_
+32	petit-déjeuner	petit-déjeuner	NOUN	_	Gender=Masc|Number=Sing	31	compound	_	_
+33	servi	servir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	acl	_	_
+34	à	à	ADP	_	_	36	case	_	_
+35	votre	son	DET	_	Gender=Fem|Number=Sing|PronType=Prs	36	nmod:poss	_	_
+36	arrivée	arrivée	NOUN	_	Gender=Fem|Number=Sing	33	nmod	_	_
+37	en	en	ADP	_	_	38	case	_	_
+38	station	station	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	_
+39	et	et	CONJ	_	_	5	cc	_	_
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+41	service	service	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_
+42	d'	de	ADP	_	_	44	case	_	_
+43	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
+44	accompagnateur	accompagnateur	NOUN	_	Gender=Masc|Number=Sing	41	nmod	_	_
+45	salarié	salarié	ADJ	_	Gender=Masc|Number=Sing	44	amod	_	_
+46	assurant	assurer	VERB	_	Tense=Pres|VerbForm=Part	44	acl	_	_
+47	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
+48	logistique	logistique	NOUN	_	Gender=Fem|Number=Sing	46	dobj	_	_
+49-50	des	_	_	_	_	_	_	_	_
+49	de	de	ADP	_	_	51	case	_	_
+50	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	51	det	_	_
+51	départs	départ	NOUN	_	Gender=Masc|Number=Plur	48	nmod	_	_
+52	et	et	CONJ	_	_	51	cc	_	_
+53-54	des	_	_	_	_	_	_	_	_
+53	de	de	ADP	_	_	55	case	_	_
+54	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_
+55	retours	retour	NOUN	_	Gender=Masc|Number=Plur	51	conj	_	_
+56	.	.	PUNCT	_	_	3	punct	_	_
+
+# sentid: fr-ud-train_00008
+# sentence-text: Il prévient que de telles agressions sont "susceptibles d'entraîner des poursuites judiciaires".
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	prévient	prévenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	que	que	SCONJ	_	_	9	mark	_	_
+4	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+5	telles	tel	DET	_	Gender=Fem|Number=Plur	6	det	_	_
+6	agressions	agression	NOUN	_	Gender=Fem|Number=Plur	9	nsubj	_	_
+7	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	"	"	PUNCT	_	_	9	punct	_	_
+9	susceptibles	susceptible	ADJ	_	Gender=Fem|Number=Plur	2	ccomp	_	_
+10	d'	de	ADP	_	_	11	mark	_	_
+11	entraîner	entraîner	VERB	_	VerbForm=Inf	9	acl	_	_
+12	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+13	poursuites	poursuite	NOUN	_	Gender=Fem|Number=Plur	11	dobj	_	_
+14	judiciaires	judiciaire	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	_
+15	"	"	PUNCT	_	_	9	punct	_	_
+16	.	.	PUNCT	_	_	2	punct	_	_

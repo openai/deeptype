@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+.DS_Store
+*.pyc
+__pycache__
+*.pkl
+build/
+dist/

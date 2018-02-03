@@ -1,0 +1,115 @@
+{
+    "datasets": [
+        {
+            "type": "train",
+            "path": "fr_pos.tsv",
+            "x": 1,
+            "y": [
+                {
+                    "column": 3,
+                    "objective": "POS"
+                }
+            ]
+        },
+        {
+            "type": "train",
+            "path": "cats_dogs.tsv",
+            "x": 0,
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type"
+                }
+            ]
+        },
+        {
+            "type": "dev",
+            "path": "fr_pos.tsv",
+            "x": 1,
+            "y": [
+                {
+                    "column": 3,
+                    "objective": "POS"
+                }
+            ]
+        },
+        {
+            "type": "dev",
+            "path": "cats_dogs.tsv",
+            "x": 0,
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type"
+                }
+            ]
+        },
+        {
+            "type": "test",
+            "path": "fr_pos.tsv",
+            "x": 1,
+            "y": [
+                {
+                    "column": 3,
+                    "objective": "POS"
+                }
+            ]
+        },
+        {
+            "type": "test",
+            "path": "cats_dogs.tsv",
+            "x": 0,
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type"
+                }
+            ]
+        }
+    ],
+    "features": [
+        {
+            "type": "word",
+            "dimension": 50
+        },
+        {
+            "type": "suffix",
+            "length": 2,
+            "dimension": 6
+        },
+        {
+            "type": "suffix",
+            "length": 3,
+            "dimension": 6
+        },
+        {
+            "type": "prefix",
+            "length": 2,
+            "dimension": 6
+        },
+        {
+            "type": "prefix",
+            "length": 3,
+            "dimension": 6
+        },
+        {
+            "type": "digit"
+        },
+        {
+            "type": "uppercase"
+        },
+        {
+            "type": "punctuation_count"
+        }
+    ],
+    "objectives": [
+        {
+            "name": "POS",
+            "type": "crf"
+        },
+        {
+            "name": "type",
+            "type": "softmax"
+        }
+    ]
+}

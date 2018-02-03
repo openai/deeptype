@@ -1,0 +1,15 @@
+{
+	"wiki": "frwiki-latest-pages-articles.xml",
+	"wikidata": "wikidata",
+	"prefix": "frwiki",
+	"sample_size": 60000000,
+	"num_names_to_load": 0,
+	"language_path": "fr_trie_fixed",
+	"redirections": "fr_redirections.tsv",
+	"classification": [
+		"type_classification",
+		"location_classification",
+		"country_classification",
+		"time_classification"
+	]
+}

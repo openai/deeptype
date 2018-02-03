@@ -1,0 +1,14 @@
+cssselect>=0.9.1
+epub-conversion>=1.0.7
+lxml>=3.4.3
+msgpack-python>=0.4.8
+numpy>=1.11.1
+pandas>=0.15.2
+progressbar2>=3.6.0
+requests>=2.6.0
+tensorflow>=1.4.0
+wikipedia-ner>=0.0.23
+ciseau>=1.0.1
+Cython>=0.23.2
+marisa-trie>=0.7.2
+ciseau

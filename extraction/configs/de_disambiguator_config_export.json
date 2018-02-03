@@ -1,0 +1,15 @@
+{
+	"wiki": "dewiki-latest-pages-articles.xml",
+	"wikidata": "wikidata",
+	"prefix": "dewiki",
+	"sample_size": 60000000,
+	"num_names_to_load": 0,
+	"language_path": "de_trie_fixed",
+	"redirections": "de_redirections.tsv",
+	"classification": [
+		"type_classification",
+		"location_classification",
+		"country_classification",
+		"time_classification"
+	]
+}

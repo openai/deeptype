@@ -1,0 +1,365 @@
+{
+    "datasets": [
+        {
+            "type": "train",
+            "path": "en_train.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ]
+        },
+        {
+            "type": "dev",
+            "path": "en_dev.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "train",
+            "path": "fr_train.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "dev",
+            "path": "fr_dev.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "train",
+            "path": "de_train.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "dev",
+            "path": "de_dev.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "train",
+            "path": "es_train.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "dev",
+            "path": "es_dev.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "train",
+            "path": "pt_train.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        },
+        {
+            "type": "dev",
+            "path": "pt_dev.h5",
+            "x": 0,
+            "ignore": "other",
+            "y": [
+                {
+                    "column": 1,
+                    "objective": "type",
+                    "classification": "type_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "location",
+                    "classification": "location_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "country",
+                    "classification": "country_classification"
+                },
+                {
+                    "column": 1,
+                    "objective": "time",
+                    "classification": "time_classification"
+                }
+            ],
+            "ignore": "other",
+            "comment": "#//#"
+        }
+    ],
+    "features": [
+        {
+            "type": "word",
+            "dimension": 200,
+            "max_vocab": 2000000
+        },
+        {
+            "type": "suffix",
+            "length": 2,
+            "dimension": 6,
+            "max_vocab": 1000000
+        },
+        {
+            "type": "suffix",
+            "length": 3,
+            "dimension": 6,
+            "max_vocab": 1000000
+        },
+        {
+            "type": "prefix",
+            "length": 2,
+            "dimension": 6,
+            "max_vocab": 1000000
+        },
+        {
+            "type": "prefix",
+            "length": 3,
+            "dimension": 6
+        },
+        {
+            "type": "digit"
+        },
+        {
+            "type": "uppercase"
+        },
+        {
+            "type": "punctuation_count"
+        }
+    ],
+    "objectives": [
+        {
+            "name": "type",
+            "type": "softmax",
+            "vocab": "type_classification/classes.txt"
+        },
+        {
+            "name": "location",
+            "type": "softmax",
+            "vocab": "location_classification/classes.txt"
+        },
+        {
+            "name": "country",
+            "type": "softmax",
+            "vocab": "country_classification/classes.txt"
+        },
+        {
+            "name": "time",
+            "type": "softmax",
+            "vocab": "time_classification/classes.txt"
+        }
+    ],
+    "wikidata_path": "wikidata",
+    "classification_path": "classifications"
+}
