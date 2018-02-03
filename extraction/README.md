@@ -12,8 +12,10 @@ First create a Python script that has a single method `classify` which returns a
 of numpy boolean arrays:
 
 ```python
+import wikidata_linker_utils.wikidata_properties as wprop
+
 def classify(c):
-    pre_1950 = c.attribute("date of birth") < 1950
+    pre_1950 = c.attribute(wprop.DATE_OF_BIRTH) < 1950
     return {"pre-1950": pre_1950}
 ```
 
@@ -47,7 +49,7 @@ def wkp(c, name):
 
 def classify(c):
     HUMAN = wkp(c, "Human")
-    is_human = c.satisfy(["instance of"], [HUMAN])
+    is_human = c.satisfy([wprop.INSTANCE_OF], [HUMAN])
     return {"human": is_human}
 ```
 
@@ -65,7 +67,7 @@ The method `TypeCollection.class_report` provides info about the number of
 unique children, items related by some edge type (see example below).
 
 ```python
-c.class_report(["instance of", "subclass of"], is_human, name="Human")
+c.class_report([wprop.INSTANCE_OF, wprop.SUBCLASS_OF], is_human, name="Human")
 ```
 
 Note: We can answer "what are the most popular pages/articles in
@@ -85,7 +87,7 @@ to connect from one node to the other the `TypeCollection.describe_connection`
 method prints the path:
 
 ```python
-c.describe_connection("Q14890", "Q336", ["instance of", "subclass of")
+c.describe_connection("Q14890", "Q336", [wprop.INSTANCE_OF, wprop.SUBCLASS_OF)
 ```
 
 ####
