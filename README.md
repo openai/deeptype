@@ -1,7 +1,7 @@
 DeepType: Multilingual Entity Linking through Neural Type System Evolution
 --------------------------------------------------------------------------
 
-This repository contains code necessary for designing, evolving type systems, and training neural type systems. To read more about this technique and our results [see this blog post](https://blog.openai.com/multilingual-entity-linking-through-neural-type-system-evolution) or read the paper.
+This repository contains code necessary for designing, evolving type systems, and training neural type systems. To read more about this technique and our results [see this blog post](https://blog.openai.com/multilingual-entity-linking-through-neural-type-system-evolution) or [read the paper](https://arxiv.org/abs/1802.01021).
 
 Authors: Jonathan Raiman & Olivier Raiman
 
