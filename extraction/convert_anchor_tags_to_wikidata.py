@@ -15,7 +15,7 @@ from wikidata_linker_utils.successor_mask import construct_mapping, construct_an
 def parse_args(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("wikipedia2wikidata_trie",
-        help="Location of wikipedia -> wikidata mapping trie."))
+        help="Location of wikipedia -> wikidata mapping trie.")
     parser.add_argument("prefix", type=str,
         help="What language is being processed, e.g. enwiki, frwiki, etc.")
     parser.add_argument("anchor_tags", type=str,
