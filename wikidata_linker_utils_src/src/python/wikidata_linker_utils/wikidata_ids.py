@@ -67,14 +67,13 @@ def load_names(path, num, prefix):
     return names
 
 
-
 def sparql_query(query):
     import requests
     wikidata_url = "https://query.wikidata.org/sparql"
     response = requests.get(
         wikidata_url,
         params={
-            "format":"json",
+            "format": "json",
             "query": query
         }
     ).json()

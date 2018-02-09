@@ -1,5 +1,4 @@
 import re
-import urllib
 
 import numpy as np
 
@@ -17,40 +16,38 @@ from .successor_mask import (
 BADS = ["Wikipedia:", "Wikipédia:", "File:", "Media:", "Help:", "User:"]
 
 
-def lines_extractor(lines, article_name):
+def _lines_extractor(lines, article_name):
     """
     Simply outputs lines
     """
     yield (article_name, lines)
 
 
-def bad_link(link):
+def _bad_link(link):
     return any(link.startswith(el) for el in BADS)
 
 
 def iterate_articles(path):
-    num_articles=9999999999999
+    num_articles = 9999999999999
     with almost_smart_open(path, "rb") as wiki:
         for article_name, lines in convert_wiki_to_lines(
                 wiki,
-                max_articles         = num_articles,
-                clear_output         = True,
-                report_every         = 100,
-                parse_special_pages  = True,
-                skip_templated_lines = False,
-                line_converter       = lines_extractor):
-            if not bad_link(article_name):
+                max_articles=num_articles,
+                clear_output=True,
+                report_every=100,
+                parse_special_pages=True,
+                skip_templated_lines=False,
+                line_converter=_lines_extractor):
+            if not _bad_link(article_name):
                 yield (article_name, lines)
 
 
 def induce_wikipedia_prefix(wikiname):
-    wikiname = name.split("-")[0]
     if wikiname in {code + "wiki" for code in LANGUAGE_CODES}:
         return wikiname
     else:
         raise ValueError("Could not determine prefix for wiki "
-                         "with name %r." % (name,))
-
+                         "with name %r." % (wikiname,))
 
 
 def convert_sql_to_lookup(props, propname):
@@ -85,6 +82,7 @@ def load_wikipedia_pageid_to_wikidata(data_dir):
 
 
 link_pattern = re.compile(r'\[\[([^\]\[:]*)\]\]')
+
 
 class WikipediaDoc(object):
     def __init__(self, doc):
@@ -147,3 +145,7 @@ def transition_trie_index(anchor_idx, dest_index, transitions, all_options):
             dest_index = -1
     return dest_index
 
+
+__all__ = ["load_redirections", "induce_wikipedia_prefix",
+           "load_wikipedia_docs", "WikipediaDoc",
+           "transition_trie_index", "iterate_articles"]

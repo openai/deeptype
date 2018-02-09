@@ -37,9 +37,3 @@ def count_lines(path):
     return int(
         get_bash_result('wc -l %s' % (path,))[0].strip().split(' ')[0]
     )
-
-
-
-
-
-

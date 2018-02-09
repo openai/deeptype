@@ -5,6 +5,7 @@ counter = progressbar.Counter()
 bar = progressbar.Bar()
 adaptive_eta = progressbar.AdaptiveETA()
 
+
 class MessageProgressbar(progressbar.ProgressBar):
     def set_message(self, message):
         self.widgets[0] = message + " "

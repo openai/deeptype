@@ -2,6 +2,7 @@ import json
 import msgpack
 import bz2
 
+
 def iterate_bytes_jsons(fin, batch_size=1000):
     current = []
     for l in fin:
@@ -25,12 +26,12 @@ def iterate_text_jsons(fin, batch_size=1000):
         if l.startswith('{'):
             current.append(l)
         if len(current) >= batch_size:
-            docs = json.loads('['+ "".join(current).rstrip(',\n') + ']')
+            docs = json.loads('[' + "".join(current).rstrip(',\n') + ']')
             for doc in docs:
                 yield doc
             current = []
     if len(current) > 0:
-        docs = json.loads('['+ "".join(current).rstrip(',\n') + ']')
+        docs = json.loads('[' + "".join(current).rstrip(',\n') + ']')
         for doc in docs:
             yield doc
         current = []
@@ -61,4 +62,3 @@ def open_wikidata_file(path, batch_size):
             "unknown extension for wikidata. "
             "Expecting bz2, json, or mp (msgpack)."
         )
-

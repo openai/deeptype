@@ -26,6 +26,7 @@ def starts_with_apostrophe_letter(word):
         word.startswith("T'")
     )
 
+
 PUNCTUATION = {"'", ",", "-", "!", ".", "?", ":", "’"}
 
 
@@ -47,7 +48,6 @@ def clean_up_trie_source(source, lowercase=True):
     if lowercase:
         return joined_tokens.lower()
     return joined_tokens
-
 
 
 ORDINAL_ANCHOR = re.compile("^\d+(st|th|nd|rd|er|eme|ème|ère)$")

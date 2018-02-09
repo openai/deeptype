@@ -7,6 +7,7 @@ from os.path import join, dirname
 def dict_fix_relative_paths(basepath, relative_paths):
     if relative_paths is None:
         relative_paths = []
+
     def load(d):
         new_obj = d.copy()
         for key in relative_paths:
@@ -32,10 +33,9 @@ def load_config(path, relative_paths=None, defaults=None, relative_to=None):
         for key, value in defaults.items():
             if key not in obj:
                 obj[key] = value
-    namedtuple_hook = lambda d: namedtuple('X', d.keys())(*d.values())
     return json.loads(
         json.dumps(obj),
-        object_hook=namedtuple_hook
+        object_hook=lambda d: namedtuple('X', d.keys())(*d.values())
     )
 
 
@@ -45,5 +45,5 @@ def json_loads(bytes):
 
 def json_serializer(x):
     return json.dumps(
-        x, check_circular=False, separators=(',',':')
+        x, check_circular=False, separators=(',', ':')
     ).encode('utf-8')

@@ -2,8 +2,8 @@ import sys
 import importlib.util
 import traceback
 
-from importlib import reload
 from os.path import basename, splitext
+
 
 def reload_module(path):
     module_name, extension = splitext(basename(path))
@@ -43,6 +43,7 @@ ALLOWED_IMPORT_ERRORS = (
     ImportError
 )
 
+
 def reload_run_retry(module_path, callback):
     while True:
         try:
@@ -63,6 +64,3 @@ def reload_run_retry(module_path, callback):
             continue
         break
     return result
-
-
-

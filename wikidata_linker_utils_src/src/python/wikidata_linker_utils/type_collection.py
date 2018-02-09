@@ -1,7 +1,7 @@
 import json
 import warnings
 
-from os.path import join, exists, realpath, dirname
+from os.path import join, exists
 from functools import lru_cache
 
 import marisa_trie
@@ -84,7 +84,7 @@ class TypeCollection(object):
             is_temporal = name in self.wikidata_names2temporal_prop_names
             assert(is_temporal), "load relations using `relation` method."
             if self.verbose:
-                print('load %r (%r)'  % (name, self.wikidata_names2prop_names[name],))
+                print('load %r (%r)' % (name, self.wikidata_names2prop_names[name],))
             self._attributes[name] = SparseAttribute.load(
                 join(self.path, "wikidata_%s" % (name,))
             )
@@ -109,7 +109,7 @@ class TypeCollection(object):
             is_temporal = name in self.wikidata_names2temporal_prop_names
             assert(not is_temporal), "load attributes using `attribute` method."
             if self.verbose:
-                print('load %r (%r)'  % (name, self.wikidata_names2prop_names[name],))
+                print('load %r (%r)' % (name, self.wikidata_names2prop_names[name],))
             self._relations[name] = OffsetArray.load(
                 join(self.path, "wikidata_%s" % (name,)),
                 compress=True
@@ -141,7 +141,6 @@ class TypeCollection(object):
 
         if changed:
             self.reset_cache()
-
 
     def get_name(self, identifier):
         if identifier >= self.num_names_to_load and self._web_get_name:
@@ -207,7 +206,7 @@ class TypeCollection(object):
                 if el in visited or el in self._bad_node or (root, el) in self._bad_node_pair:
                     continue
                 visited.add(el)
-                res = self.is_member_with_path(el, fields, member_fields, max_steps, steps=steps+1, visited=visited, path=path + [field])
+                res = self.is_member_with_path(el, fields, member_fields, max_steps, steps=steps + 1, visited=visited, path=path + [field])
                 if res is not None:
                     return res
         return None
@@ -284,7 +283,6 @@ class TypeCollection(object):
             self._satisfy_cache[satisfy_key] = CachedRelation(1, state)
         return state
 
-
     def reset_cache(self):
         cache_keys = list(self._satisfy_cache.keys())
         for key in cache_keys:
@@ -312,7 +310,6 @@ class TypeCollection(object):
                 print("%r" % (self.get_name(art),))
             print("")
 
-
     def class_report(self, relation_names, truth_table, name="Other", topn=20):
         active_nodes = np.where(truth_table)[0].astype(np.int32)
         num_active_nodes = len(active_nodes)
@@ -326,12 +323,9 @@ class TypeCollection(object):
             for field in topfields[:topn]:
                 if counts[field] == 0:
                     break
-                print("%.3f%% (%d): %r" % (
-                        100.0 * counts[field] / num_active_nodes,
-                        counts[field],
-                        self.get_name(field)
-                    )
-                )
+                print("%.3f%% (%d): %r" % (100.0 * counts[field] / num_active_nodes,
+                                           counts[field],
+                                           self.get_name(field)))
             print("")
 
         is_fp = np.logical_and(
@@ -374,8 +368,6 @@ class TypeCollection(object):
                 ))
                 continue
             filtered_bad_node_pair.append((el, oel))
-        bad_node_pair = set(
-            [(self.name2index[el], self.name2index[oel])
-            for el, oel in filtered_bad_node_pair]
-        )
+        bad_node_pair = set([(self.name2index[el], self.name2index[oel])
+                             for el, oel in filtered_bad_node_pair])
         self.set_bad_node(bad_node, bad_node_pair)

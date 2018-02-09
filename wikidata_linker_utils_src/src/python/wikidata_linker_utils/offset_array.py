@@ -63,9 +63,7 @@ def convert_dict_to_offset_array(dictionary, num_values):
     total_num_values = sum(len(v) for _, v in dictionary.items())
     values = np.zeros(total_num_values, dtype=np.int32)
     position = 0
-    i = 0
-    j = 0
-    for key, value in sorted(dictionary.items(), key=lambda x : x[0]):
+    for key, value in sorted(dictionary.items(), key=lambda x: x[0]):
         values[position:position + len(value)] = value
         position += len(value)
         offsets[key] = len(value)
@@ -121,7 +119,4 @@ class SparseAttribute(object):
     @classmethod
     def load(cls, path):
         dense, mask = load_sparse(path + "_values.sparse.npy")
-        return SparseAttribute(
-            dense, mask
-        )
-
+        return SparseAttribute(dense, mask)
