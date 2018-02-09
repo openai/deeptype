@@ -44,7 +44,6 @@ def iterate_articles(path):
 
 
 def induce_wikipedia_prefix(wikiname):
-    name = config.wiki.split("/")[-1]
     wikiname = name.split("-")[0]
     if wikiname in {code + "wiki" for code in LANGUAGE_CODES}:
         return wikiname
