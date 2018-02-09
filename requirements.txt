@@ -11,4 +11,3 @@ wikipedia-ner>=0.0.23
 ciseau>=1.0.1
 Cython>=0.23.2
 marisa-trie>=0.7.2
-ciseau
