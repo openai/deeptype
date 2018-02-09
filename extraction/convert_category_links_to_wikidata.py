@@ -13,7 +13,7 @@ from wikidata_linker_utils.offset_array import save_record_with_offset
 def parse_args(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("wikipedia2wikidata_trie",
-        help="Location of wikipedia -> wikidata mapping trie."))
+        help="Location of wikipedia -> wikidata mapping trie.")
     parser.add_argument("wikidata_ids")
     parser.add_argument("prefix")
     parser.add_argument("category_links")
