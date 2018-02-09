@@ -96,6 +96,7 @@ def rollout(cached_satisfy, key2row, tags, aucs, ids, sample,
     mean_auc = 0.0
     sample_sum = sample.sum()
     if sample_sum == 0:
+        total = len(tags)
         return (greedy_correct / total,
                 greedy_correct / total)
     if sample_sum > MAX_PICKS:

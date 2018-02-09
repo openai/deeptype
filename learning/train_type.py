@@ -2435,7 +2435,7 @@ class SequenceTagger(object):
             named_outputs = {}
             for objective in self._model.objectives:
                 obj_name = objective["name"]
-                scores = outputs[obj_name]
+                tags, scores = outputs[obj_name]
                 if objective["type"] == "crf":
                     named_outputs[obj_name] = [
                         [(token, [objective["vocab"][tag]], [score]) for token, tag in zip(tokens, tags)]

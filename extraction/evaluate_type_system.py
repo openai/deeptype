@@ -375,7 +375,6 @@ def fix_and_parse_tags(config, collection, size):
             prefix=prefix,
             first_names=first_names,
             collection=collection,
-            fix_destination=fix_destination,
             min_count=config.min_count,
             min_percent=config.min_percent)
         if any(x is not None for _, x in tags):
