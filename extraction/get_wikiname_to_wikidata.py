@@ -221,7 +221,7 @@ def main():
         join(PROJECT_DIR, "data", "wikidata", 'wikidata_time_property_names.json')
     )
     # fields to make easily accessible:
-    important_properties = [
+    wikidata_important_properties = [
         wikidata_properties.INSTANCE_OF,
         wikidata_properties.SUBCLASS_OF,
         wikidata_properties.PART_OF,
@@ -258,12 +258,6 @@ def main():
         wikidata_properties.POINT_IN_TIME,
         wikidata_properties.START_TIME,
         wikidata_properties.END_TIME
-    ]
-    prop_names2wikidata_names = {
-        value:key for key, value in wikidata_names2prop_names.items()
-    }
-    wikidata_important_properties = [
-        prop_names2wikidata_names[prop] for prop in important_properties
     ]
     wikidata_important_properties_fnames = [
         (name, join(args.wikidata, "wikidata_%s.txt" % (name,)), name in wikidata_names2temporal_prop_names)
