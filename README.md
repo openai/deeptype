@@ -20,7 +20,7 @@ export DATA_DIR=data/
 
 ### Create a type system manually and check oracle accuracy:
 
-To build a graph projection using a set of rules inside `type_projection.py`
+To build a graph projection using a set of rules inside `type_classifier.py`
 (or any Python file containing a `classify` method), and a set of nodes
 that should not be traversed in `blacklist.json`:
 
