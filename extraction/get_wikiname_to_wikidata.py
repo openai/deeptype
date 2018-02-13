@@ -240,7 +240,7 @@ def main():
         wikidata_properties.SERIES,
         wikidata_properties.USE,
         wikidata_properties.LOCATION,
-        wikidata_properties.FACE_OF,
+        wikidata_properties.FACET_OF,
         wikidata_properties.IS_A_LIST_OF,
         wikidata_properties.COUNTRY_OF_ORIGIN,
         wikidata_properties.PRODUCT_OR_MATERIAL_PRODUCED,
