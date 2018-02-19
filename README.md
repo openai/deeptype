@@ -20,7 +20,7 @@ export DATA_DIR=data/
 
 ### Create a type system manually and check oracle accuracy:
 
-To build a graph projection using a set of rules inside `type_projection.py`
+To build a graph projection using a set of rules inside `type_classifier.py`
 (or any Python file containing a `classify` method), and a set of nodes
 that should not be traversed in `blacklist.json`:
 
@@ -37,7 +37,7 @@ directory stored in `CLASSIFICATION_DIR`:
 export LANGUAGE=fr
 export DATA_DIR=data/
 export CLASSIFICATION_DIR=data/type_classification
-python3 extraction/project_graph.py ${DATA_DIR}wikidata/ extraction/blacklist.json extraction/classifiers/type_classifier.py  --export_classification ${CLASSIFICATION_DIR}
+python3 extraction/project_graph.py ${DATA_DIR}wikidata/ extraction/classifiers/type_classifier.py  --export_classification ${CLASSIFICATION_DIR}
 ```
 
 To use the saved graph projection on wikipedia data to test out how discriminative this
