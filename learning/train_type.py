@@ -17,12 +17,6 @@ from batchifier import (iter_batches_single_threaded,
 import tensorflow as tf
 import numpy as np
 
-from wikidata_linker_utils.conlleval import (
-    evaluate as conll_evaluate,
-    conll_defaults,
-    metrics as conll_metrics
-)
-
 try:
     RNNCell = tf.nn.rnn_cell.RNNCell
     TFLSTMCell = tf.nn.rnn_cell.LSTMCell
@@ -39,7 +33,7 @@ except AttributeError:
 from tensorflow.python.client import device_lib
 
 
-class LazyAdamOptimizer(tf.train.adam.AdamOptimizer):
+class LazyAdamOptimizer(tf.train.AdamOptimizer):
     """Variant of the Adam optimizer that handles sparse updates more efficiently.
 
     The original Adam algorithm maintains two moving-average accumulators for
