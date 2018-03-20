@@ -26,6 +26,7 @@ from sklearn import metrics
 from collections import Counter
 
 from wikidata_linker_utils.type_collection import TypeCollection, offset_values_mask
+import wikidata_linker_utils.wikidata_properties as wprop
 from wikidata_linker_utils.progressbar import get_progress_bar
 from generator import prefetch_generator
 
@@ -168,14 +169,16 @@ def generate_training_data(collection, path):
 
 def get_proposal_sets(collection, article_ids, seed):
     np.random.seed(seed)
-    relation = collection.relation("category_link")
+    relation = collection.relation(wprop.CATEGORY_LINK)
+
     relation_mask = offset_values_mask(relation.values, relation.offsets, article_ids)
     counts = np.bincount(relation.values[relation_mask])
-    is_fp = collection.relation("fixed_points").edges() > 0
+    is_fp = collection.relation(wprop.FIXED_POINTS).edges() > 0
     is_fp = is_fp[:counts.shape[0]]
     counts = counts * is_fp
     topfields_fp = np.argsort(counts)[::-1][:(counts > 0).sum()]
-    relation = collection.relation("instance of")
+    relation = collection.relation(wprop.INSTANCE_OF)
+
     relation_mask = offset_values_mask(relation.values, relation.offsets, article_ids)
     counts = np.bincount(relation.values[relation_mask])
     topfields_instance_of = np.argsort(counts)[::-1][:(counts > 0).sum()]
@@ -183,7 +186,7 @@ def get_proposal_sets(collection, article_ids, seed):
     np.random.shuffle(topfields_instance_of)
     np.random.shuffle(topfields_fp)
 
-    return [(topfields_instance_of, "instance of"), (topfields_fp, "category_link")]
+    return [(topfields_instance_of, wprop.INSTANCE_OF), (topfields_fp, wprop.CATEGORY_LINK)]  
 
 
 def build_truth_tables(collection, lines, qids, relation_name):
