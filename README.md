@@ -1,3 +1,5 @@
+**Status:** Archive (code is provided as-is, no updates expected)
+
 DeepType: Multilingual Entity Linking through Neural Type System Evolution
 --------------------------------------------------------------------------
 
