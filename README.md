@@ -9,7 +9,7 @@ Authors: Jonathan Raiman & Olivier Raiman
 
 Our latest approach to learning symbolic structures from data allows us to discover a set of task specific constraints on a neural network in the form of a type system, to guide its understanding of documents, and obtain state of the art accuracy at [recognizing entities in natural language](https://en.wikipedia.org/wiki/Entity_linking). Recognizing entities in documents can be quite challenging since there are often millions of possible answers. However, when using a type system to constrain the options to only those that semantically "type check," we shrink the answer set and make the problem dramatically easier to solve. Our new results suggest that learning types is a very strong signal for understanding natural language: if types were given to us by an oracle, we find that it is possible to obtain accuracies of 98.6-99% on two benchmark tasks [CoNLL (YAGO)](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/aida/) and the [TAC KBP 2010 challenge](https://pdfs.semanticscholar.org/b7fb/11ef06b0dcdc89ef0a5507c6c9ccea4206d8.pdf).
 
-### Data colllection
+### Data collection
 
 Get wikiarticle -> wikidata mapping (all languages) + Get anchor tags, redirections, category links, statistics (per language). To store all wikidata ids, their key properties (`instance of`, `part of`, etc..), and
 a mapping from all wikipedia article names to a wikidata id do as follows,
